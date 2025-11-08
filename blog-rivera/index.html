@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+
+    nav ul {
+        background-color: rgb(233, 205, 224);
+        display: flex;
+        list-style: none;
+        gap: 10px;
+        height: 40px;
+        justify-content: end;
+        align-items: center;
+    }
+
+    nav a {
+        background-color: rgb(244, 232, 240);
+        padding: 10px 40px;
+        text-decoration: none;
+    }
+
+    main{
+        display: flex;
+    }
+
+
+       .article-container {
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+
+    .feed li{
+        display: inline-block;
+
+    }
+
+    hr{
+        border: 10px solid rgb(255, 255, 255);
+    }
+
+    aside{
+        background-color: rgb(222, 197, 213);
+        width: 33%;
+    }
+    
+    footer{
+        background-color: rgb(247, 224, 249);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+        list-style-type: none;
+        text-decoration: none;
+}
+    footer a {
+  text-decoration: none;
+  color: purple;
+}
+.columna {
+    display: inline-block;
+    width: 25vw;
+    vertical-align: top;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.columna li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+#columna2 {
+    text-align: center;
+    list-style-type: none;
+        text-decoration: none;
+}
+
+#columna3 li {
+    display:inline-block ;
+    list-style: none;
+        text-decoration: none;
+}
+
+#volver {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(233, 205, 224);
+    color: rgb(58, 1, 78);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+
+}
+
+
+
+
+    .hero {
+        width: 100%;
+        }
+ .hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+} 
+
+.feed {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+  width: 100%;
+  background-color: white;
+}
+
+ 
+
+.feed article {
+  width: 30%;
+  padding: 10px;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
+.feed article img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+marquee {
+  margin: 10px auto;
+  font-weight: bold;
+  color: rgb(58, 1, 78);
+}
+
+.suscripcion {
+  background-color: rgb(244, 232, 240);
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.suscripcion h3 {
+  color: rgb(58, 1, 78);
+  margin-bottom: 10px;
+  font-family: 'Cambria', serif;
+}
+
+.suscripcion p {
+  font-size: 0.9em;
+  color: #4a2c4c;
+  margin-bottom: 10px;
+}
+
+.suscripcion input {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid rgb(233, 205, 224);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.suscripcion button {
+  background-color: rgb(233, 205, 224);
+  color: rgb(58, 1, 78);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.suscripcion button:hover {
+  background-color: rgb(222, 197, 213);
+}
+@media (max-width:768px) {
+  nav ul {
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+  }
+
+  nav a {
+    display: inline-block;
+    width: 100%;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .feed {
+    width: 100%;
+    flex-direction: column;   
+    align-items: stretch;     
+  }
+
+  aside {
+    width: 100%;
+    order: -1;
+  }
+
+  .hero {
+    background-size: cover;
+  }
+
+  .article-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .feed article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;   
+  }
+
+  .feed article img {
+    width: 100%;
+    height: auto;
+  }
+}
+.perfil, .datos {
+  background-color: rgb(244, 232, 240);
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="publicaciones.html">Publicaciones</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+  <marquee width="100%" direction="right">Sigueme en instagram @isabellariverac </marquee>
+
+
+    <header class="hero">
+<img src="despiertapotencial.png" alt="despierta tu potencial">
+    </header>
+
+
+
+    <main>
+        <section class="feed"> 
+            <h1  style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 2em;">Bienvenido a ¨Despierta tu potencial¨</h1> 
+            <p>Acompañame en este espacio donde exploramos juntos el poder que llevás dentro.
+Este blog nace del deseo de crecer, aprender y transformar cada día en una oportunidad para ser tu mejor versión.
+Aquí vas a encontrar reflexiones, herramientas y experiencias que te invitan a mirar hacia adentro, cuestionarte y avanzar con propósito.
+No se trata de perfección, sino de evolución.
+ ¿Listo para despertar tu potencial? Empecemos </p> <hr> <hr>
+            
+            
+        <div class="article-container">
+
+        <h1>Publicación mas popular</h1>
+         <article style="width: 100%; display: flex; gap: 25px; align-items: center;">
+         <img style="width: 40%;" src="disciplina.png" alt="Imagen del artículo">
+         <div style="text-align: left;">
+         <h2  style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-bottom: auto;">Cómo crear una rutina matutina que te energice</h2>
+         <p>Hace un tiempo empecé a cambiar mis mañanas porque sentía que arrancaba el día sin ganas...
+</p>
+          <a href="publicacion1.html">Leer más</a> <hr> <hr>
+         </div>
+ 
+        </article>
+
+         <article>
+         <img src="accion.png" alt="Imagen del artículo">
+          <h2  style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Vencer la procrastinación</h2>
+         <p>Soy experta en dejar todo para después (o lo era). Me costaba un montón arrancar cosas... 
+</p>
+          <a href="publicacion3.html">Leer más</a>
+        </article>
+
+        <article>
+         <img src="vinculo.png" alt="Imagen del artículo">
+          <h2  style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Tu entorno importa</h2>
+         <p>Las personas que te rodean influyen más de lo que creés...
+</p>
+          <a href="publicacion3.html">Leer más</a>
+        </article>
+
+         <article>
+         <img src="limites.png" alt="Imagen del artículo">
+          <h2  style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Límites saludables</h2>
+         <p>Decir que no me costaba muchísimo. Sentía culpa, miedo de quedar mal...</p>
+          <a href="publicacion2.html">Leer más</a>
+        </article>
+        </div>
+        
+        </section>
+
+        <aside>
+            <section class="perfil">
+            <h3 style="text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 1.5em">Sobre mi</h3>
+            <img src="yop.jpg" alt="yop"  width="150" height="200" style="display: block; margin: 0 auto; border-radius: 50% / 30%;">
+ <p>Soy  <strong>Isabella Rivera</strong>,, la creadora y autora de este blog. 
+Me interesa mucho el <strong>desarrollo personal</strong> y la vida consciente. Estoy aprendiendo a vivir con menos exigencias y a encontrar alegría en lo simple como una rutina que me hace bien, una frase que me inspira o un momento de calma.
+</p>
+</section>
+
+
+            <section class="datos">
+            <h3>Educación</h3>
+            <ul style="list-style: none;">
+                <li><p>Actualmente estoy cursando el ultimo año de la carrera de Administracion de Empresas en la UADE</p></li>
+              <h3>Trabajo</h3>
+               <li><p>Actualmente estoy trabajando como pasante de payroll en Argentina</p></li>
+            </ul>
+            </section>
+
+            <section class="suscripcion">
+          <h3>Suscribete al blog</h3>
+          <p>Asi estas enterado cuando suba un nuevo blog.</p>
+          <form>
+            <input type="email" placeholder="Tu correo electrónico" required>
+          <button type="submit">Suscribete</button>
+         </form>
+         </section>
+
+        </aside>
+
+    </main>
+
+    <footer id="pie"> 
+        <div class="columna">
+            <h3>Isabella Rivera</h3>
+        </div>
+        <div class="columna" >
+            <h3>Mapa del sitio</h3>
+            <ul id="columna2">
+  <li><a href="index.html">Inicio</a></li>
+  <li><a href="About.html">About</a></li>
+  <li><a href="publicaciones.html">Publicaciones</a></li>
+  <li><a href="contacto.html">Contacto</a></li>
+
+            </ul>
+        </div>
+
+        <div class="columna"id="columna3">
+            <h3>Redes sociales</h3>
+            <ul class="columna">
+                <li><a href="https://www.linkedin.com/in/isabella-rivera-c" target="_blank">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/isabellariverac?igsh=MWR4bGl3N2I2eGdpNw== "target="_blank">Instagram</a></li>
+                <li><a href="https://www.tiktok.com/@isabellarc26?_t=ZM-903CqTdiYPo&_r=1" target="_blank">TikTok</a></li>
+            </ul>
+        <a id="Volver" href="#">volver arriba</a>
+        </div>
+    </footer>
+    
+
+    
+</body>
+</html>

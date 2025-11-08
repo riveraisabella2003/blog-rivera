@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rutina matutina</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      margin-top: 60px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background-color: rgb(233, 205, 224);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 10px;
+      height: 40px;
+      justify-content: end;
+      align-items: center;
+      padding-right: 20px;
+    }
+
+    nav a {
+      background-color: rgb(244, 232, 240);
+      padding: 10px 40px;
+      text-decoration: none;
+     color: #5d2d6b;
+    }
+
+    .contenido-post {
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .titulo-post {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .fecha-post {
+      font-size: 0.9rem;
+      color: #999;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+        footer{
+        background-color: rgb(247, 224, 249);
+    
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+    footer a {
+  text-decoration: none;
+  color: purple;
+}
+.columna {
+    display: inline-block;
+    width: 25vw;
+    vertical-align: top;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.columna li {
+    list-style-type: none;
+}
+
+#columna2 {
+    text-align: center;
+    list-style-type: none;
+}
+
+#columna3 li {
+    display:inline-block ;
+}
+
+#volver {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(233, 205, 224);
+    color: rgb(58, 1, 78);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+
+}
+
+ @media (max-width: 768px) {
+    
+      nav ul {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+      }
+
+      nav a {
+        width: 100%;
+        display: block;
+      }
+
+      form {
+        width: 90%;
+      }
+
+      .contenido-post {
+        margin-top: 150px;
+      }
+    }
+        .bloque-reflexion {
+  background-color: #fef6fb;
+  border-left: 5px solid rgb(233, 205, 224);
+  padding: 25px 30px;
+  margin: 40px 0;
+  border-radius: 12px;
+  font-family: Cambria, serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  color: #4a2c4c;
+}
+.bloque-reflexion ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+.bloque-reflexion li {
+  margin-bottom: 8px;
+}
+ .boton {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 40px;
+  background-color: rgb(221, 191, 211);
+  color: rgb(17, 14, 18);
+  border: none;
+  cursor: pointer;
+  border-radius: 8px; 
+  text-decoration: none;
+}
+
+
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="publicaciones.html">Publicaciones</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main class="contenido-post">
+    <article>
+      <h1 class="titulo-post" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"> Cómo establecer metas que te motiven (y no te agobien)</h1>
+      <p class="fecha-post">Publicado el 31 de octubre de 2025</p>
+      <img src="metas.jpg" alt="Imagen del artículo">
+      
+      <div class="bloque-reflexion">
+      <p>¿Te cuesta mantener el foco en tus metas? Durante mucho tiempo me exigía demasiado, quería cumplir todo rápido, sin errores, y si no lo lograba, me frustraba. Sentía que las metas eran una lista interminable de cosas que debía hacer para sentirme “productiva”.</p>
+      <p>Pero con el tiempo entendí que <strong>las metas no tienen que ser una fuente de presión.</strong> Pueden ser una guía, una forma de conectar con lo que realmente quiero, sin perderme en la exigencia. <strong>Aprendí a plantearlas desde el deseo, no desde la obligación.</strong> A dejar espacio para el descanso, para el cambio, y para el error.</p>
+      <p>Lo que más me ayudó fue <strong>simplificar.</strong> Elegir pocas metas, pero que me importen de verdad. Dividirlas en pasos pequeños. <strong>Celebrar cada avance, aunque sea mínimo.</strong> Y sobre todo, permitirme <strong>ajustar el camino</strong> sin sentir que fracasé.</p>
+      <p>Establecer metas que te motiven es una forma de cuidarte. No se trata de hacer más, sino de avanzar con intención, a tu ritmo, y con respeto por tu proceso.</p>
+      <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjh2ZzVmODFlYjdjbzg1MTlqaDU5NXMxcTl2anQxOHJ5emd3OXViMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7TKPP5UMqNbvFpte/giphy.gif" alt="GIF divertido" />
+     
+     <div style="display: flex; justify-content: space-between;">
+      <a href="publicacion4.html"  class="boton">← Volver </a>
+      <a href="index.html"  class="boton">Inicio</a>
+      </div>
+    </article>
+  </main>
+
+      <footer id="pie"> 
+        <div class="columna">
+            <h3>Isabella Rivera</h3>
+        </div>
+        <div class="columna" >
+            <h3>Mapa del sitio</h3>
+            <ul id="columna2">
+  <li><a href="index.html">Inicio</a></li>
+  <li><a href="About.html">About</a></li>
+  <li><a href="publicaciones.html">Publicaciones</a></li>
+  <li><a href="contacto.html">Contacto</a></li>
+
+            </ul>
+        </div>
+
+        <div class="columna"id="columna3">
+            <h3>Redes sociales</h3>
+            <ul class="columna">
+                <li><a href="https://www.linkedin.com/in/isabella-rivera-c" target="_blank">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/isabellariverac?igsh=MWR4bGl3N2I2eGdpNw== "target="_blank">Instagram</a></li>
+                <li><a href="https://www.tiktok.com/@isabellarc26?_t=ZM-903CqTdiYPo&_r=1" target="_blank">TikTok</a></li>
+            </ul>
+        <a id="Volver" href="#">Volver arriba</a>
+        </div>
+    </footer>
+</body>
+</html>
+

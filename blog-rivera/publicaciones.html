@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+
+    nav ul {
+        background-color: rgb(233, 205, 224);
+        display: flex;
+        list-style: none;
+        gap: 10px;
+        height: 40px;
+        justify-content: end;
+        align-items: center;
+    }
+
+    nav a {
+        background-color: rgb(244, 232, 240);
+        padding: 10px 40px;
+         text-decoration: none;
+    }
+
+    main{
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+
+    }
+
+    .feed{
+        background-color: rgb(255, 255, 255);
+        width: 70%;
+    }
+
+    .feed li{
+        display: inline-block;
+
+    }
+
+    hr{
+        border: 10px solid rgb(255, 255, 255);
+    }
+
+    aside{
+        background-color: rgb(222, 197, 213);
+        width: 33%;
+    }
+    
+    footer{
+       background-color: rgb(247, 224, 249);
+       min-height: 120px;
+    }
+
+    @media (max-width:768px) {
+        nav{
+
+        }
+
+        nav ul {
+            flex-direction: column;
+            height: 100%;
+            text-align: center;
+        }
+
+        nav a {
+            display: inline-block;
+            width: 100%;
+        }
+
+        main{
+            flex-direction: column;
+     
+        }
+
+        .feed{
+            width: 100%;
+            order: 0;
+        }
+
+        aside{
+            width: 100%;
+            order: -1;
+        }
+        .feed article {
+            flex-direction: column;
+        }
+    } 
+
+
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px;
+  width: 100%;
+  background-color: white;
+}
+
+
+.feed article {
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
+.feed article img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.feed article {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  background-color: transparent;
+  padding: 10px;
+  border: none;
+  box-shadow: none;
+}
+
+.feed article img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 0; }
+
+    footer{
+     background-color: rgb(247, 224, 249);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+    footer a {
+  text-decoration: none;
+  color: purple;
+}
+.columna {
+    display: inline-block;
+    width: 25vw;
+    vertical-align: top;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.columna li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+#columna2 {
+    text-align: center;
+    list-style-type: none;
+        text-decoration: none;
+}
+
+#columna3 li {
+
+    list-style: none;
+    text-decoration: none;
+}
+
+ @media (max-width: 768px) {
+    .feed article {
+        flex-direction: column;
+    }
+ }
+
+
+#volver {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(233, 205, 224);
+    color: rgb(58, 1, 78);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+
+ 
+}
+.suscripcion {
+  background-color: rgb(244, 232, 240);
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.suscripcion h3 {
+  color: rgb(58, 1, 78);
+  margin-bottom: 10px;
+  font-family: 'Cambria', serif;
+}
+
+.suscripcion p {
+  font-size: 0.9em;
+  color: #4a2c4c;
+  margin-bottom: 10px;
+}
+
+.suscripcion input {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid rgb(233, 205, 224);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.suscripcion button {
+  background-color: rgb(233, 205, 224);
+  color: rgb(58, 1, 78);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.suscripcion button:hover {
+  background-color: rgb(222, 197, 213);
+}
+
+.perfil, .datos {
+  background-color: rgb(244, 232, 240);
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+    </style>
+
+
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="publicaciones.html">Publicaciones</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="feed"> 
+            <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Bienvenido a despierta tu potencial</h1> 
+
+     <article>
+    <a href="publicacion1.html"><img src="disciplina.png" alt="Imagen del artículo"></a>
+  <div class="contenido">
+    <h2>Cómo crear una rutina matutina que te energice</h2>
+    <p class="meta">Publicado el 31 de octubre de 2025 por Isabella Rivera</p>
+    <p>Hace un tiempo empecé a cambiar mis mañanas porque sentía que arrancaba el día sin ganas...</p>
+    <a href="publicacion1.html">Leer más</a>
+  </div>
+</article>
+
+<article>
+ <a href="publicacion2.html"><img src="limites.png" alt="Imagen del artículo"></a>
+  <div class="contenido">
+    <h2>Límites saludables</h2>
+    <p class="meta">Publicado el 31 de octubre de 2025 por Isabella Rivera</p>
+    <p>Decir que no me costaba muchísimo. Sentía culpa, miedo de quedar mala...</p>
+    <a href="publicacion2.html">Leer más</a>
+  </div>
+</article>
+
+<article>
+<a href="publicacion3.html"><img src="accion.png" alt="Imagen del artículo"></a> 
+  <div class="contenido">
+    <h2>Técnicas para vencer la procrastinación</h2>
+    <p class="meta">Publicado el 31 de octubre de 2025 por Isabella Rivera</p>
+    <p>Soy experta en dejar todo para después (o lo era). Me costaba un montón arrancar cosas, aunque supiera que eran importantes.
+Acá te cuento algunas técnicas que me sirvieron... </p>
+    <a href="publicacion3.html">Leer más</a>
+  </div>
+</article>
+
+<article>
+<a href="publicacion4.html"><img src="vinculo.png" alt="Imagen del artículo"></a>   
+  <div class="contenido">
+    <h2>Tu entorno importa</h2>
+    <p class="meta">Publicado el 31 de octubre de 2025 por Isabella Rivera</p>
+    <p>Las personas que te rodean influyen más de lo que creés...</p>
+    <a href="publicacion4.html">Leer más</a>
+  </div>
+</article>
+
+<article>
+<a href="publicacion5.html"><img src="enfoque.png" alt="Imagen del artículo"></a> 
+  <div class="contenido">
+    <h2> Cómo establecer metas que te motiven (y no te agobien)</h2>
+    <p class="meta">Publicado el 31 de octubre de 2025 por Isabella Rivera</p>
+    <p>¿Te cuesta mantener el foco en tus metas? Probé formas más amables de avanzar sin agobiarme...</p>
+    <a href="publicacion5.html">Leer más</a>
+  </div>
+</article>
+
+     <div style="display: flex; justify-content: right;">
+      <a href="pagina2.html" style="text-decoration: none;"> 2 </a>  <hr>
+      <a href="pagina2.html" style="text-decoration: none;"> 3 </a>
+
+     </section>
+        
+        <aside>
+            <section class="perfil">
+            <h3 style="text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 1.5em">Sobre mi</h3>
+            <img src="yop.jpg" alt="yop"  width="150" height="200" style="display: block; margin: 0 auto; border-radius: 50% / 30%;">
+ <p>Soy  <strong>Isabella Rivera</strong>,, la creadora y autora de este blog. 
+Me interesa mucho el <strong>desarrollo personal</strong> y la vida consciente. Estoy aprendiendo a vivir con menos exigencias y a encontrar alegría en lo simple como una rutina que me hace bien, una frase que me inspira o un momento de calma.</p>
+</section>
+
+            <section class="datos">
+            <h3>Educación</h3>
+            <ul style="list-style: none;">
+                <li><p>Actualmente estoy cursando el ultimo año de la carrera de Administracion de Empresas en la UADE</p></li>
+              <h3>Trabajo</h3>
+               <li><p>Actualmente estoy trabajando como pasante de payroll en Argentina</p></li>
+            </ul>
+            </section>
+
+            <section class="suscripcion">
+          <h3>Suscribite al blog</h3>
+          <p>Asi estas enterado cuando suba un nuevo blog</p>
+          <form>
+            <input type="email" placeholder="Tu correo electrónico" required>
+          <button type="submit">Suscribete</button>
+         </form>
+         </section>
+
+        </aside>
+
+    </main>
+    <footer id="pie"> 
+        <div class="columna">
+            <h3>Isabella Rivera</h3>
+        </div>
+        <div class="columna" >
+            <h3>Mapa del sitio</h3>
+            <ul id="columna2">
+  <li><a href="index.html">Inicio</a></li>
+  <li><a href="About.html">About</a></li>
+  <li><a href="publicaciones.html">Publicaciones</a></li>
+  <li><a href="contacto.html">Contacto</a></li>
+
+            </ul>
+        </div>
+
+        <div class="columna"id="columna3">
+            <h3>Redes sociales</h3>
+            <ul class="columna">
+                <li><a href="https://www.linkedin.com/in/isabella-rivera-c" target="_blank">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/isabellariverac?igsh=MWR4bGl3N2I2eGdpNw== "target="_blank">Instagram</a></li>
+                <li><a href="https://www.tiktok.com/@isabellarc26?_t=ZM-903CqTdiYPo&_r=1" target="_blank">TikTok</a></li>
+            </ul>
+        <a id="Volver" href="#">Volver arriba</a>
+        </div>
+    </footer>
+    
+
+    
+</body>
+</html>
